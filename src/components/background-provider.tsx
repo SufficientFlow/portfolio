@@ -7,12 +7,12 @@ import {
 import { useTheme } from "next-themes"
 
 export default function BackgroundProvider(){
-    const { theme } = useTheme()
-    const [color, setColor] = useState("#ffffff")
+    const { theme, resolvedTheme } = useTheme()
+    const [color, setColor] = useState(resolvedTheme === "dark" ? "#ffffff" : "#000000")
   
     useEffect(() => {
-      setColor(theme === "dark" ? "#ffffff" : "#000000")
-    }, [theme])
+      setColor(resolvedTheme === "dark" ? "#ffffff" : "#000000")
+    }, [resolvedTheme])
 
 
     return <Particles 
