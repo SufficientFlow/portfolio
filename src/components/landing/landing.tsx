@@ -59,11 +59,10 @@ export default function Landing() {
                 showProjects ? 'opacity-100' : 'opacity-0'
                 }`}
             >
-                See some of the things I've worked on below.
+                See some of the things I&apos;ve worked on below.
                 <ArrowBigDownIcon />
             </span>
         </div>
     </div>
-      
     )
 }
