@@ -5,6 +5,7 @@ import { GithubIcon } from "lucide-react"
 interface ProjectCardProps {
     title: string,
     description: string,
+    shortDescription: string,
     image: string,
     imageAlt: string,
     link: string
@@ -15,8 +16,8 @@ export default function ProjectCard(props : ProjectCardProps) {
         <div className="group relative flex flex-row w-full rounded-xl border border-zinc-200 bg-white p-6 shadow-md transition-all hover:shadow-lg dark:border-zinc-800 dark:bg-zinc-900">
             <div className="flex flex-col items-center justify-center w-1/3">
                 <Image 
-                    className="rounded-lg object-cover" 
-                    src={props.image || "https://picsum.photos/300/200"} 
+                    className="rounded-lg object-cover w-full h-full" 
+                    src={process.env.POCKETBASE_URL + "/api/files/" + props.image} 
                     alt={props.imageAlt} 
                     width={300} 
                     height={200} 
@@ -35,8 +36,11 @@ export default function ProjectCard(props : ProjectCardProps) {
                             <GithubIcon className="w-5 h-5" />
                         </Link>
                     </div>
-                    <p className="text-zinc-600 dark:text-zinc-400">
+                    <p className="text-zinc-600 dark:text-zinc-400 md:inline hidden">
                         {props.description}
+                    </p>
+                    <p className="text-zinc-600 dark:text-zinc-400 inline md:hidden">
+                        {props.shortDescription}
                     </p>
                 </div>
             </div>
