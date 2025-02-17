@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { ThemeProvider } from "@/components/theme-provider"
 import { SpeedInsights } from "@vercel/speed-insights/next"
+import { Analytics } from '@vercel/analytics/next';
 
 import "./globals.css";
 import {
@@ -43,7 +44,6 @@ export default function RootLayout({
       <body
         className="antialiased lg:px-56 md:px-32 sm:px-16"
       >
-        <SpeedInsights />
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
@@ -111,6 +111,8 @@ export default function RootLayout({
         </header>
         <main>
           {children}
+          <SpeedInsights />
+          <Analytics />
         </main>
         <Footer 
             logo={<Avatar>
