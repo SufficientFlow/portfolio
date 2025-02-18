@@ -11,7 +11,7 @@ import {
 } from "@/components/ui/avatar"
 import ThemeProviderButton from "@/components/ui/theme-provider-button"
 import BackgroundProvider from "@/components/background-provider";
-import { Github, Hexagon, Linkedin } from "lucide-react";
+import { Github, Linkedin } from "lucide-react";
 import { Footer } from "@/components/ui/footer";
 
 
