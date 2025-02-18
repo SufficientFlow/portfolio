@@ -13,6 +13,7 @@ import ThemeProviderButton from "@/components/ui/theme-provider-button"
 import BackgroundProvider from "@/components/background-provider";
 import { Github, Linkedin } from "lucide-react";
 import { Footer } from "@/components/ui/footer";
+import { Toaster } from "@/components/ui/toaster";
 
 
 export const metadata: Metadata = {
@@ -140,6 +141,7 @@ export default function RootLayout({
               text: "© 2025 Jesse van der Voet",
               license: "All rights reserved",
             }} legalLinks={[]}        />
+            <Toaster />
         </ThemeProvider>
       </body>
     </html>
