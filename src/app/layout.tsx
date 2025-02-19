@@ -17,7 +17,7 @@ import { Toaster } from "@/components/ui/toaster";
 
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://jesse-portfolio.com'),
+  metadataBase: new URL('https://jessevandervoet.vercel.app'),
   title: "Jesse | Portfolio",
   description: "Full-stack developer portfolio showcasing React, TypeScript, and Next.js projects. Explore my work in web development, software engineering, and UI/UX design.",
   keywords: [
