@@ -19,7 +19,7 @@ import { Toaster } from "@/components/ui/toaster";
 export const metadata: Metadata = {
   metadataBase: new URL('https://jessevandervoet.vercel.app'),
   title: "Jesse | Portfolio",
-  description: "Full-stack developer portfolio showcasing React, TypeScript, and Next.js projects. Explore my work in web development, software engineering, and UI/UX design.",
+  description: "Software Engineer portfolio showcasing React, TypeScript, and Next.js projects. Explore my work in web development, software engineering, and UI/UX design.",
   keywords: [
     "next.js", "react", "typescript", "web development",
     "portfolio", "full-stack developer", "software engineer",
@@ -48,8 +48,8 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     url: "https://jessevandervoet.vercel.app",
-    title: "Jesse van der Voet | Full-Stack Developer Portfolio",
-    description: "Full-stack developer portfolio showcasing React, TypeScript, and Next.js projects. Explore my work in web development, software engineering, and UI/UX design.",
+    title: "Jesse van der Voet | Software Engineer Portfolio",
+    description: "Software Engineer portfolio showcasing React, TypeScript, and Next.js projects. Explore my work in web development, software engineering, and UI/UX design.",
     siteName: "Jesse's Portfolio",
     images: [{
       url: "/thumbnail.png",
@@ -60,8 +60,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Jesse van der Voet | Full-Stack Developer Portfolio",
-    description: "Full-stack developer portfolio showcasing React, TypeScript, and Next.js projects. Explore my work in web development, software engineering, and UI/UX design.",
+    title: "Jesse van der Voet | Software Engineer Portfolio",
+    description: "Software Engineer portfolio showcasing React, TypeScript, and Next.js projects. Explore my work in web development, software engineering, and UI/UX design.",
     images: ["/thumbnail.png"],
   },
   category: "Technology",
