@@ -1,7 +1,6 @@
 import Landing from "@/components/landing/landing";
 import ProjectCard from "@/components/ui/project-card";
 import Database from "@/lib/pocketbase";
-import { RecordModel } from "pocketbase";
 
 const queryResult = await Database.getProjects();
 

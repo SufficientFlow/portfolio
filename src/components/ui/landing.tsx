@@ -1,6 +1,6 @@
 "use client"
 
-import { ArrowBigDown, ArrowBigDownDashIcon, ArrowBigDownIcon, ArrowDown } from "lucide-react";
+import { ArrowBigDownIcon } from "lucide-react";
 import Link from "next/link";
 import { 
     useState,
@@ -13,15 +13,15 @@ export default function Landing() {
     const [showProjects, setShowProjects] = useState(false)
 
     useEffect(() => {
-        const titleTimer = setTimeout(() => {
+        setTimeout(() => {
             setShowName(true);
           }, 2500);
 
-        const underTitleTimer = setTimeout(() => {
+        setTimeout(() => {
             setShowUnderTitle(true);
           }, 4500);
 
-        const projectsTimer = setTimeout(() => {
+        setTimeout(() => {
             setShowProjects(true);
           }, 6000);
     }, [])

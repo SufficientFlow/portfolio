@@ -7,7 +7,7 @@ import {
 import { useTheme } from "next-themes"
 
 export default function BackgroundProvider(){
-    const { theme, resolvedTheme } = useTheme()
+    const { resolvedTheme } = useTheme()
     const [color, setColor] = useState(resolvedTheme === "dark" ? "#ffffff" : "#000000")
   
     useEffect(() => {
