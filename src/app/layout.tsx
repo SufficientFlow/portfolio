@@ -17,21 +17,70 @@ import { Toaster } from "@/components/ui/toaster";
 
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://jesse-portfolio.com'),
   title: "Jesse | Portfolio",
-  description: "A personal portfolio built so I can show off my projects and skills",
-  keywords: ["next.js", "react", "web application"],
-  authors: [{ name: "Jesse van der Voet" }],
+  description: "Full-stack developer portfolio showcasing React, TypeScript, and Next.js projects. Explore my work in web development, software engineering, and UI/UX design.",
+  keywords: [
+    "next.js", "react", "typescript", "web development",
+    "portfolio", "full-stack developer", "software engineer",
+    "UI/UX design", "frontend development", "Jesse van der Voet"
+  ],
+  authors: [{ name: "Jesse van der Voet", url: "https://github.com/SufficientFlow" }],
   creator: "Jesse van der Voet",
+  publisher: "Jesse van der Voet",
   robots: {
-    index: false,
-    follow: false,
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
   },
   viewport: {
     width: "device-width",
     initialScale: 1,
+    maximumScale: 5,
   },
-  icons: {
-    icon: "/favicon.ico",
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: "https://jessevandervoet.vercel.app",
+    title: "Jesse van der Voet | Full-Stack Developer Portfolio",
+    description: "Full-stack developer portfolio showcasing React, TypeScript, and Next.js projects. Explore my work in web development, software engineering, and UI/UX design.",
+    siteName: "Jesse's Portfolio",
+    images: [{
+      url: "/thumbnail.png",
+      width: 1200,
+      height: 630,
+      alt: "Jesse van der Voet - Portfolio Preview",
+    }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Jesse van der Voet | Full-Stack Developer Portfolio",
+    description: "Full-stack developer portfolio showcasing React, TypeScript, and Next.js projects. Explore my work in web development, software engineering, and UI/UX design.",
+    images: ["/thumbnail.png"],
+  },
+  category: "Technology",
+  classification: "Portfolio",
+  referrer: "origin-when-cross-origin",
+  colorScheme: "dark light",
+  formatDetection: {
+    email: false,
+    address: false,
+    telephone: false,
+  },
+  themeColor: [
+    { media: "(prefers-color-scheme: light)", color: "#ffffff" },
+    { media: "(prefers-color-scheme: dark)", color: "#000000" },
+  ],
+  appleWebApp: {
+    capable: true,
+    title: "Jesse's Portfolio",
+    statusBarStyle: "default",
   },
 };
 
